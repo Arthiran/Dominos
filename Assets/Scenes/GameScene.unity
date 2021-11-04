@@ -7496,7 +7496,7 @@ GameObject:
   - component: {fileID: 1865825885}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7626,9 +7626,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1865825878}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a725d947774a114a9a6ada31ab95880, type: 3}
+  m_Script: {fileID: 11500000, guid: e2438ead2424be84e84dc196a0928649, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerController: {fileID: 0}
+  BombPrefab: {fileID: 527370137202617089, guid: 64bea777ce9987a468c31061a7f2c8a4, type: 3}
+  numBombs: 5
+  BombOffset: {x: 8, y: 0.75}
+  BombSpawnTimer: 0.75
 --- !u!4 &1869535872 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6264570715437827353, guid: 895d93b690a0be94e8fd207c539c57cf, type: 3}
@@ -8645,7 +8650,7 @@ GameObject:
   - component: {fileID: 435727759}
   m_Layer: 7
   m_Name: House
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

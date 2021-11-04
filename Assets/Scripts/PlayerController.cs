@@ -32,6 +32,8 @@ public class PlayerController : MonoBehaviour
 
     private bool HasLost = false;
 
+    private bool HitBomb = false;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -63,7 +65,10 @@ public class PlayerController : MonoBehaviour
             CanJump = CheckGrounded;
         }
 
-        HasLost = CheckOutOfBounds;
+        if (CheckOutOfBounds || HitBomb)
+        {
+            HasLost = true;
+        }
     }
 
     private void FixedUpdate()
@@ -114,6 +119,11 @@ public class PlayerController : MonoBehaviour
         {
             return false;
         }
+    }
+
+    public void HitByBomb()
+    {
+        HitBomb = true;
     }
 
     private void OnTriggerEnter(Collider other)
