@@ -62,11 +62,6 @@ public class BombManager : MonoBehaviour
         }
     }
 
-    private void BeginSpawning()
-    {
-        StartCoroutine(SpawnBombOnTimer());
-    }
-
     private void SpawnBomb()
     {
         GameObject CurrentBomb;

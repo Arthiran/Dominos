@@ -30,9 +30,15 @@ Game Scene:
 
 UML:
 
+Game:
 ![Alt Text](https://github.com/Arthiran/Marbles/blob/main/UML/UML1.png)
 ![Alt Text](https://github.com/Arthiran/Marbles/blob/main/UML/UML2.png)
+
+Factory Patterns:
 ![Alt Text](https://github.com/Arthiran/Marbles/blob/main/UML/UML3.png)
+
+Optimization Patterns:
+![Alt Text](https://github.com/Arthiran/Marbles/blob/main/UML/UML4.png)
 
 External Assets Acknowledgement:
 - Used TextMeshPro (Build in Unity plugin)
