@@ -64,12 +64,6 @@ public class BombManager : MonoBehaviour
 
     private void SpawnBomb()
     {
-        GameObject CurrentBomb;
-        CurrentBomb = BombPool[0];
-        BombPool.RemoveAt(0);
-        BombPool.Add(CurrentBomb);
-        CurrentBomb.SetActive(true);
-
         Vector3 NewBombOffset = new Vector3(0, 0, 0);
 
         if (CurrentDirection == 1)
@@ -93,6 +87,11 @@ public class BombManager : MonoBehaviour
             NewBombOffset = new Vector3(0, BombOffset.x, BombOffset.y);
         }
 
+        GameObject CurrentBomb;
+        CurrentBomb = BombPool[0];
+        BombPool.RemoveAt(0);
+        BombPool.Add(CurrentBomb);
+        CurrentBomb.SetActive(true);
         CurrentBomb.transform.SetPositionAndRotation(transform.position + NewBombOffset, Quaternion.Euler(-90, 0, 0));
     }
 
