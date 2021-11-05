@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class ObjectDeactivate : MonoBehaviour
+public class ObjectDeactivateTutorial : MonoBehaviour
 {
     [HideInInspector]
-    public BombManager bombManager;
-    public GameObject ExplosionPS;
+    public BombManagerTutorial bombManager;
+    public GameObject ExplosionPS; 
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -20,6 +20,10 @@ public class ObjectDeactivate : MonoBehaviour
             if (bombManager.isTutorial)
             {
                 bombManager.StopSpawning();
+            }
+            else
+            {
+                bombManager.TutorialText.text = "Ouch, you would've lost!";
             }
             gameObject.SetActive(false);
         }

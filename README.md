@@ -1,10 +1,6 @@
 # Welcome to the Marbles (Assignment) Game Repository
 
-Develppment Team:
-Warhorse Studios (Non-GDW)
-
-Aaron Chan (Command Design Programmer) - 100657311
-Arthiran Sivarajah (Factory Design Programmer) - 100660300
+Arthiran Sivarajah - 100660300
 
 Game Instructions:
 
@@ -32,10 +28,6 @@ Game Scene:
     Movement: WASD Keys
     Jump: Space Key
 
-Level Editor Scene:
-    Movement: Right Mouse Button (Drag)
-    Place Objects: Left Mouse Button
-
 UML:
 
 ![Alt Text](https://github.com/Arthiran/Marbles/blob/main/UML/UML1.png)
@@ -43,9 +35,9 @@ UML:
 ![Alt Text](https://github.com/Arthiran/Marbles/blob/main/UML/UML3.png)
 
 External Assets Acknowledgement:
-- Used Command Pattern code from Game Engine Design Tutorial
 - Used TextMeshPro (Build in Unity plugin)
 - Used Unity 3D Models (Cube, Cylinder)
+- Used Unity 3D Particle System
 
 Youtube Demo Video:
 

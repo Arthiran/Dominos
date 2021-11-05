@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
-public class BombManager : MonoBehaviour
+public class BombManagerTutorial : MonoBehaviour
 {
     [HideInInspector]
     public PlayerController playerController;
@@ -26,7 +27,10 @@ public class BombManager : MonoBehaviour
 
     public bool isTutorial = false;
 
+    [HideInInspector]
     public bool CanSpawn = false;
+
+    public TextMeshProUGUI TutorialText;
 
     private void Awake()
     {
@@ -35,7 +39,7 @@ public class BombManager : MonoBehaviour
         for (int i = 0; i < numBombs; i++)
         {
             GameObject SpawnedBomb = Instantiate(BombPrefab, new Vector3(0, 0, 0), Quaternion.identity);
-            SpawnedBomb.GetComponent<ObjectDeactivate>().bombManager = this;
+            SpawnedBomb.GetComponent<ObjectDeactivateTutorial>().bombManager = this;
             SpawnedBomb.SetActive(false);
             BombPool.Add(SpawnedBomb);
         }
