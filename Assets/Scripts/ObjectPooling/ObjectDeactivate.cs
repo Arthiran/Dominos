@@ -17,10 +17,7 @@ public class ObjectDeactivate : MonoBehaviour
         }
         else if (collision.gameObject.tag == "Player")
         {
-            if (bombManager.isTutorial)
-            {
-                bombManager.StopSpawning();
-            }
+            bombManager.StopSpawning();
             gameObject.SetActive(false);
         }
 

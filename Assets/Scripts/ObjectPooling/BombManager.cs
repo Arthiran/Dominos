@@ -24,10 +24,6 @@ public class BombManager : MonoBehaviour
 
     private bool SpawnBombs = true;
 
-    public bool isTutorial = false;
-
-    public bool CanSpawn = false;
-
     private void Awake()
     {
         playerController = FindObjectOfType<PlayerController>();
@@ -40,10 +36,7 @@ public class BombManager : MonoBehaviour
             BombPool.Add(SpawnedBomb);
         }
 
-        if (!isTutorial)
-        {
-            StartCoroutine(SpawnBombOnTimer());
-        }
+        StartCoroutine(SpawnBombOnTimer());
     }
 
     private void Update()
@@ -66,12 +59,6 @@ public class BombManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.D))
         {
             CurrentDirection = 2;
-        }
-
-        if (isTutorial && CanSpawn)
-        {
-            BeginSpawning();
-            isTutorial = false;
         }
     }
 
