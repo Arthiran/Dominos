@@ -1,5 +1,9 @@
 # Welcome to the Marbles (Assignment) Game Repository
 
+Develppment Team:
+Warhorse Studios (Non-GDW)
+
+Aaron Chan - 100657311
 Arthiran Sivarajah - 100660300
 
 Game Instructions:
@@ -50,4 +54,4 @@ External Assets Acknowledgement:
 
 Youtube Demo Video:
 
-https://youtu.be/BLE1_VO81mY
+https://youtu.be/Q5tYn-L511k
