@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController2 : MonoBehaviour
 {
     [HideInInspector] public Rigidbody rb;
     private SphereCollider SphereCol;
@@ -66,7 +66,7 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         // Player Movement handles in FixedUpdate
-        if (thisClient.playerNum == 1)
+        if (thisClient.playerNum == 2)
         {
             MovePlayer();
         }

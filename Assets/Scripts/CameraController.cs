@@ -6,8 +6,7 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    [SerializeField]
-    private Transform Player;
+    public Transform Player;
     [SerializeField]
     private float SmoothSpeed = 0.05f;
     [SerializeField]
